@@ -1,6 +1,6 @@
 console.log('hello Codeit!');
 
-function welcome(name){
+function welcome(name) {
     console.log('안녕하세요 ' + name + '님!');
 };
 welcome('이수아');
@@ -13,17 +13,17 @@ welcome('두리');
 
 샌드위치 이름(sandwich)과 음료 이름(drink)을 입력받고,
 다음과 같은 문구를 출력하는 함수(orderSetMenu)를 만들어 주세요. */
-function orderSetMenu(sandwich, drink ='스프라이트'){
+function orderSetMenu(sandwich, drink = '스프라이트') {
     console.log(`주문하신 ${sandwich}, ${drink} 세트메뉴 나왔습니다!`);
-  }
-  // 테스트 코드
-  orderSetMenu('코드웨잇 클럽');
-  orderSetMenu('터키베이컨 아보카도', '코카콜라');
-  orderSetMenu('코드웨잇 멜트');
-  orderSetMenu('이탈리안 비엠티', '닥터페퍼');
-  orderSetMenu('에그마요', '환타 오렌지');
+}
+// 테스트 코드
+orderSetMenu('코드웨잇 클럽');
+orderSetMenu('터키베이컨 아보카도', '코카콜라');
+orderSetMenu('코드웨잇 멜트');
+orderSetMenu('이탈리안 비엠티', '닥터페퍼');
+orderSetMenu('에그마요', '환타 오렌지');
 
-  /*
+/*
 나이가 같은 경우: '친구'
 
 자신보다 나이가 어릴 경우:
@@ -50,22 +50,22 @@ let callYoungerBrother = '남동생';
 
 // 상대방의 나이와 성별에 따른 호칭을 리턴하는 함수 whatShouldICall를 완성하세요.
 function whatShouldICallYou(yourAge, yourGender) {
-  // 여기에 코드를 작성해 주세요.
-  if(yourAge == myAge){
-    return(callFriend);
-  }else if(yourAge >= myAge){
-    if(yourGender == myGender){
-      return(callOlderBrother);
-    }else{
-      return(callOlderSister);
+    // 여기에 코드를 작성해 주세요.
+    if (yourAge == myAge) {
+        return (callFriend);
+    } else if (yourAge >= myAge) {
+        if (yourGender == myGender) {
+            return (callOlderBrother);
+        } else {
+            return (callOlderSister);
+        }
+    } else {
+        if (yourGender == myGender) {
+            return (callYoungerBrother);
+        } else {
+            return (callYoungerSister);
+        }
     }
-  }else{
-    if(yourGender == myGender){
-      return(callYoungerBrother);
-    }else{
-      return(callYoungerSister);
-    }
-  }
 }
 
 // 테스트 코드
